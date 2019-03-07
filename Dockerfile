@@ -1,9 +1,7 @@
 FROM php:7.2.15-apache
-
 LABEL maintainer="Azure App Services Container Images <appsvc-images@microsoft.com>"
-ENV PHP_VERSION 7.2.15
 
-ENV PHP_VERSION 7.2.11
+ENV PHP_VERSION 7.2.15
 COPY apache2.conf /bin/
 COPY init_container.sh /bin/
 COPY hostingstart.html /home/site/wwwroot/hostingstart.html
